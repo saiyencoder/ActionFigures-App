@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/action_figures_url' => 'action_figures#action_figures_action'
+  get '/all_action_figures_url' => 'action_figures#all_action_figures_action'
 end

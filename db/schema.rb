@@ -16,8 +16,9 @@ ActiveRecord::Schema.define(version: 20170830004631) do
   enable_extension "plpgsql"
 
   create_table "action_figures", force: :cascade do |t|
-    t.string "category"
+    t.string "name"
     t.string "description"
+    t.string "image"
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

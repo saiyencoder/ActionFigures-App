@@ -1,0 +1,9 @@
+<h1>Action Figures for Sale</h1>
+
+<% @action_figures.each do |action_figure| %>
+  <h2>Name: <%= action_figure.name %> </h2>
+  <h2>Description: <%= action_figure.description %> </h2>
+  <h2>Image: <img src= <%= action_figure.image %> ></h2>
+  <h2>Price: $<%= action_figure.price %> </h2>
+  <br>
+<% end %>
