@@ -1,0 +1,2 @@
+class ActionFigure < ApplicationRecord
+end

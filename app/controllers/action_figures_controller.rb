@@ -1,0 +1,2 @@
+class ActionFiguresController < ApplicationController
+end
