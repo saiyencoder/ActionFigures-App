@@ -10,6 +10,16 @@
 
   <body>
     <h1><a href="/">Dragon Ball Store</a></h1>
+    <p><a href="/action_figures/new">New Action Figure</a></p>
+    <div>
+    <%= flash.each do |name,message|%>
+      <div class="alert alert-<%= name %> alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= message %>
+      </div>
+    <% end %>
+
     <%= yield %>
+    </div>
   </body>
 </html>

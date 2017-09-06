@@ -1,0 +1,17 @@
+<h1>Edit Action Figure</h1>
+
+<%= form_tag "/action_figures/#{@action_figure.id}", method: :patch do %>
+  <div>
+    Name: <input type="text" name="name" value="<%= @action_figure.name %>">
+  </div>
+  <div>
+    Description: <input type="text" name="description" value="<%= @action_figure.description %>">
+  </div>
+  <div>
+    Image: <input type="text" name="image" value="<%= @action_figure.image %>">
+  </div>
+  <div>
+    Price: <input type="text" name="price" value="<%= @action_figure.price %>">
+  </div>
+<input type="submit" name="Update Action Figure" class="btn btn-success">
+<% end %>
