@@ -5,7 +5,7 @@ class ActionFiguresController < ApplicationController
   # end
 
   # def all_action_figures_action
-  #   @action_figures = ActionFigure.all
+  #   @action_figures = ActionFigure.alld
   #   render 'all_action_figures_page.html.erb'
   # end
 
